@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+img{
+  max-height: 70px;
+  padding-bottom: 5px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+
+}
+header .brand{
+  font-family: 'Amatic SC';
+  font-size: 3rem;
+  padding-left: 20px;
+}
+.the-whole-bloody-affair{
+  padding-top: 30px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  min-height: 70px;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAF9F6;
+}
+
+nav > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35vw;
+}
+
+
+header ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+ 
+}
+li:last-of-type{
+  padding-right: 20px;
+}
+
+a:hover{
+  color: #F4511E;
+}
+body{
+  background-color: #FAF9F6;
+  width: 100%;
+  font-family: Poppins;
+}
+#info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+.tagline{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+form{
+  width: 100%;
+}
+.intro{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.mail{
+  width: 100%;
+  height: 28px;
+  max-width: 300px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #E4D9B7,#F8F1E5);
+  font-family: 'Poppins', sans-serif;
+}
+input[type="email"]{
+  text-indent: 15px;
+  padding: 5px;
+}
+input[type="email"]:focus{
+  outline: none;
+}
+input::placeholder{
+  text-align: left;
+  color: black;
+  font-size: 15px;
+  text-indent: 15px;
+}
+.submit{
+  width: 100%;
+  text-align: center;
+}
+.btn-submit{
+  width: 100%;
+  max-width: 120px;
+  background-color: orange;
+  height: 25px;
+  line-height: 27px;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-weight: bold;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btn-submit:active{
+background-color: #E64A19;
+}
+
+.container{
+  width: 70%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.feature{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  color: green;
+  font-size: 25px;
+}
+.feature-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: right;
+  font-size: 1.1rem; 
+}
+
+#how-it-works{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+#how-it-works h2{
+  padding-bottom: 40px;
+}
+#how-it-works iframe{
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+}
+.price{
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  font-size: 35px;
+}
+#pricing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.product{
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+  margin: 10px;
+}
+.pricing li{
+  list-style-type: none;
+  text-align: center;
+}
+.pricing h3{
+  background-color: orange;
+  width: 100%;
+  height: calc(16px + 20px);
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Adjust layout for small screens */
+    height: auto; /* Allow the header to grow dynamically */
+  }
+
+  nav > ul {
+    flex-direction: column; /* Stack navigation items */
+    width: 100%; /* Full width for small devices */
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  #info {
+    padding-top: 120px; /* Add padding to account for header height */
+  }
+  
+  .mail {
+    max-width: 90%; /* Ensure email input adjusts to small screens */
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    max-width: 100%; /* Adjust submit button size */
+    font-size: 14px;
+  }
+}
